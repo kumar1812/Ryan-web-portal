@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ACL & MCL Injury Prediction Slides</title>
   <style>
   
@@ -18,11 +18,13 @@
 
 .popup-content {
   background-color: #fff;
-  margin: 10% auto;
+  margin: 5vh auto;
   padding: 20px;
   border-radius: 10px;
-  width: 80%;
+  width: 90%;
   max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
   position: relative;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
@@ -66,11 +68,12 @@
       padding: 0;
     }
 
-    html, body {
-      height: 100%;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
-    }
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: Arial, sans-serif;
+}
 
     body {
       font-family: Arial, sans-serif;
@@ -105,8 +108,8 @@
     }
 
     .sidebar img {
-      width: 100%;
-      height: auto;
+  max-width: 100%;
+  height: auto;
       border-radius: 8px;
       margin-bottom: 10px;
     }
@@ -203,20 +206,20 @@
       padding: 10px;
       flex-shrink: 0;
     }
-    @media (max-width: 1100px) {
-      .container {
-        flex-direction: column;
-      }
-      .sidebar, .profile {
-        width: 100%;
-        box-shadow: none;
-        border: none;
-        margin-bottom: 10px;
-      }
-      main.main {
-        padding: 15px 5vw;
-      }
-    }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar, .profile {
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 10px;
+  }
+     main.main {
+    padding: 15px 5vw;
+  }
+}
   </style>
 </head>
 <body>
@@ -250,10 +253,11 @@
         <li><a class="button" href="slide3.html">Hypothesis & Research Question</a></li>
         <li><a class="button" href="slide4.html">Specific Aims</a></li>
         <li><a class="button" href="slide5.html">Methodology</a></li>
-        <li><a class="button" href="https://kumar1812.github.io/Ryan-web-portal/slide6.html">Ethics and Responsible AI Use</a></li>
-        <li><a class="button" href="https://kumar1812.github.io/Ryan-web-portal/slide7.html">Significance & Next Steps</a></li>
-        <li><a class="button" href="https://kumar1812.github.io/Ryan-web-portal/slide8.html">Run Diagnosis </a></li>
+        <li><a class="button" href="slide6.html">Ethics and Responsible AI Use</a></li>
+        <li><a class="button" href="slide7.html">Significance & Next Steps</a></li>
+        <li><a class="button" href="slide8.html">Run Diagnosis </a></li>
 		<li><a class="button" id="openPopup">Reference Sites</a></li>
+
 
 
       </ul>
