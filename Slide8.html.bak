@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ACL & MCL Injury Entry Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('Background1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #222;
+        }
+        .container {
+            background: rgba(255,255,255,0.92);
+            padding: 1.2rem 1rem;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+            max-width: 270px;
+            width: 95vw;
+            margin: 18px auto;
+        }
+        h2 { 
+            text-align: center; 
+            margin-bottom: 1.1rem; 
+            font-size: 1.15rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            align-self: flex-start;
+            margin-top: 0.7rem;
+            font-size: 0.97rem;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.45rem;
+            margin-top: 0.25rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 0.97rem;
+            background: #f9f9f9;
+        }
+        button, .button-link {
+            width: 100%;
+            padding: 0.55rem;
+            margin-top: 1rem;
+            background: #0d6efd;
+            color: #fff !important;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: inline-block;
+        }
+        button:hover, .button-link:hover {
+            background: #0852b2;
+        }
+
+        /* Modal Styles */
+        .modal-bg {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            wid

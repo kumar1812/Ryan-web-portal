@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ACL & MCL Injury Entry Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('Background1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #222;
+        }
+        .container {
+            background: rgba(255,255,255,0.92);
+            padding: 1.2rem 1rem;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+            max-width: 270px;
+            width: 95vw;
+            margin: 18px auto;
+        }
+        h2 { 
+            text-align: center; 
+            margin-bottom: 1.1rem; 
+            font-size: 1.15rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            align-self: flex-start;
+            margin-top: 0.7rem;
+            font-size: 0.97rem;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.45rem;
+            margin-top: 0.25rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 0.97rem;
+            background: #f9f9f9;
+        }
+        button, .button-link {
+            width: 100%;
+            padding: 0.55rem;
+            margin-top: 1rem;
+            background: #0d6efd;
+            color: #fff !important;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: inline-block;
+        }
+        button:hover, .button-link:hover {
+            background: #0852b2;
+        }
+
+        /* Modal Styles */
+        .modal-bg {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            background: rgba(0,0,0,0.45);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: #fff;
+            padding: 1.2rem 1rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+            text-align: center;
+            max-width: 230px;
+            width: 85vw;
+        }
+        .modal-link-btn, .modal-content button {
+            width: 85px;
+            margin: 0.5rem 0.4rem 0 0.4rem;
+            padding: 0.4rem 0;
+            background: #0d6efd;
+            color: #fff !important;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: inline-block;
+        }
+        .modal-link-btn:hover, .modal-content button:hover {
+            background: #0852b2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>ACL & MCL Injury Entry Form</h2>
+        <form action="#" method="post" onsubmit="showModal(); return false;">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required >
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="1" required>
+
+            <label for="injuryType">Injury Type</label>
+            <select id="injuryType" name="injuryType" required>
+                <option value="">Select</option>
+                <option value="ACL">ACL</option>
+                <option value="MCL">MCL</option>
+                <option value="Both">Both</option>
+            </select>
+
+            <label for="injuryDate">Date of Injury</label>
+            <input type="date" id="injuryDate" name="injuryDate" required>
+
+            <label for="injurySide">Side</label>
+            <select id="injurySide" name="injurySide" required>
+                <option value="">Select</option>
+                <option value="Left">Left</option>
+                <option value="Right">Right</option>
+                <option value="Both">Both</option>
+            </select>
+
+            <label for="mechanism">Mechanism of Injury</label>
+            <textarea id="mechanism" name="mechanism" rows="2" placeholder="e.g., Twisting, Contact, Non-contact" required></textarea>
+
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="2" placeholder="Any other details"></textarea>
+
+            <button type="submit">Submit</button>
+            <a href="index.html" class="button-link">Home</a>
+        </form>
+    </div>
+    <!-- Modal Structure -->
+    <div class="modal-bg" id="modalBg">
+        <div class="modal-content">
+            <div style="font-size:1.01rem; margin-bottom: 0.6rem;">
+                <strong>AI Integration is in progress</strong>
+            </div>
+            <button onclick="closeModal()">OK</button>
+            <a href="index.html" class="modal-link-btn">Home</a>
+        </div>
+    </div>
+    <script>
+        function showModal() {
+            document.getElementById('modalBg').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('modalBg').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

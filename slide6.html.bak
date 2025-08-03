@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ethics and Responsible AI Use</title>
+  <style>
+ body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: url('Background1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #222;
+  }
+  section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #ffffff;
+    border-left: 5px solid #3498db;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  ul {
+    margin-top: 10px;
+  }
+  nav {
+    margin-top: 30px;
+  }
+  a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 5px;
+  }
+  .footer {
+    margin-top: 60px;
+    font-size: 0.9em;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+  <h1>Ethics and Responsible AI Use</h1>
+  <section>
+    <ul>
+      <li>IRB approval and informed consent required</li>
+      <li>Anonymized data to protect athlete identity</li>
+      <li>Minimize model bias and promote fairness</li>
+      <li>Document ChatGPT and AI tool usage</li>
+    </ul>
+    <p>Ethical considerations are a core part of this proposal. We'll obtain IRB approval, use anonymized data, and follow guidelines for human research. We’ll ensure our model doesn’t favor or disadvantage certain groups and document our use of AI tools like ChatGPT to maintain academic integrity.</p>
+	<p>Ethical considerations are central to this research and will guide every phase of the project. Prior to data collection, we will obtain full approval from an Institutional Review Board (IRB) and ensure that all participants provide informed consent, clearly understanding how their data will be used, stored, and protected. To maintain confidentiality, all athlete data will be anonymized and stored securely, with strict protocols in place to prevent unauthorized access or misuse. We are especially mindful of the risk of bias in machine learning models, and we will take deliberate steps to detect and minimize any disparities in model performance across different genders, races, and athletic populations. Fairness and inclusivity will be actively monitored during both model training and evaluation. In addition, we will transparently document all uses of AI tools, including ChatGPT and other generative technologies, to ensure academic honesty and maintain the integrity of our research process. By prioritizing ethics, transparency, and accountability, this project not only aims to advance the science of injury prediction but also to set a strong example for how responsible AI should be used in health and sports research.</p>
+    </section>
+  <nav>
+    <a class="button" href="slide5.html">Previous</a>
+    <a class="button" href="slide7.html">Next</a>
+	<a class="button" href="index.html">Home</a>
+  </nav>
+</body>
+</html>
